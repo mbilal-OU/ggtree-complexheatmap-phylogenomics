@@ -1,0 +1,11 @@
+gene,S01,S02,S03,S04,S05,S06,S07,S08,S09,S10,S11,S12,S13,S14,S15,S16,S17,S18
+TP53,SNV,SNV;Amplification,Deletion,Deletion,,,SNV,,,SNV,,,,Amplification,,SNV,SNV,SNV
+PIK3CA,,SNV,,Deletion,SNV,,SNV,SNV,,,,,,Deletion,SNV,,,
+KRAS,SNV,,,,,,SNV,,SNV,SNV,,,SNV,,,Amplification,,
+EGFR,,,,SNV,,Amplification,,,Deletion,,SNV,,SNV;Deletion,,SNV,Amplification,SNV,
+PTEN,SNV,,Amplification,,,,,,,,,,,,,,,
+BRAF,,,,,Deletion,,,,,,,,,,Amplification,,,
+BRCA1,,,Amplification,,,,,,,,,Deletion,SNV,,,,SNV,
+RB1,SNV,SNV,,,,,,SNV,,Deletion,,,,,SNV,,,
+MYC,,,Amplification,,,,,,,SNV,,,,,,,,
+CDKN2A,,SNV,,,,SNV,Amplification,,,,,,,,,SNV,,

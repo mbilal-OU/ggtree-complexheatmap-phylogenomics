@@ -1,0 +1,10 @@
+^\.github$
+^CONTRIBUTING\.md$
+^data$
+^docs$
+^figures$
+^scripts$
+^tutorials$
+^_pkgdown\.yml$
+^LICENSE\.md$
+

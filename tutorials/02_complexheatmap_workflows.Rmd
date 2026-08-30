@@ -1,0 +1,45 @@
+---
+title: "ComplexHeatmap Workflows for Omics"
+output: html_document
+---
+
+```{r setup, message=FALSE}
+library(phyloheatmapviz)
+read_matrix <- function(path) {
+  x <- read.csv(path, check.names = FALSE)
+  ids <- x[[1]]; x <- as.matrix(x[-1]); rownames(x) <- ids
+  storage.mode(x) <- "numeric"; x
+}
+samples <- read.csv("../data/sample_metadata.csv")
+expression <- read_matrix("../data/expression_zscores.csv")
+```
+
+## Annotation-aware expression heatmap
+
+```{r expression}
+ComplexHeatmap::draw(annotated_expression_heatmap(expression, samples))
+```
+
+The function requires metadata in exactly the same order as matrix columns.
+Condition defines the split; batch remains visible as an annotation rather than
+being mistaken for a biological cluster.
+
+## Multi-omics alignment
+
+```{r multiomics}
+pathway <- read_matrix("../data/pathway_activity.csv")
+ComplexHeatmap::draw(multiomics_heatmap(expression, pathway, samples))
+```
+
+Concatenated heatmaps share sample order. A mismatch is an error rather than a
+plausible-looking but incorrect figure.
+
+## Sample-similarity review
+
+```{r correlation}
+ComplexHeatmap::draw(correlation_heatmap(expression, samples))
+```
+
+Correlation structure can identify potential batch patterns or outliers, but
+the result still depends on filtering, normalization, and feature selection.
+

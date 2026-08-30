@@ -1,0 +1,44 @@
+---
+title: "ggtree Foundations: Topology, Layout, and Annotation"
+output: html_document
+---
+
+```{r setup, message=FALSE}
+library(phyloheatmapviz)
+tree <- ape::read.tree("../data/pathogen_tree.nwk")
+metadata <- read.csv("../data/tip_metadata.csv")
+```
+
+## Validate before joining
+
+```{r validation}
+validate_tip_alignment(tree, metadata)
+```
+
+Tree tip labels are keys. A row-number join can silently attach host, lineage,
+or resistance information to the wrong isolate.
+
+## Rectangular and circular layouts
+
+```{r trees}
+rectangular_phylogeny(tree, metadata)
+circular_phylogeny(tree, metadata)
+```
+
+The same topology can be drawn in different layouts. Layout is presentation;
+it does not change evolutionary distance or clade membership.
+
+## Support and aligned genomic traits
+
+```{r support}
+clade_support_tree(tree, support_threshold = 80)
+```
+
+```{r pangenome}
+pangenome <- read.csv("../data/pangenome.csv", row.names = 1, check.names = FALSE)
+aligned_pangenome_tree(tree, as.matrix(pangenome))
+```
+
+The pangenome matrix is reordered to `tree$tip.label` only after exact set
+equality is established.
+
