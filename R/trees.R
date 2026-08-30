@@ -37,7 +37,7 @@ clade_support_tree <- function(tree, support_threshold = 70) {
   ggtree::ggtree(tree, linewidth = 0.7) +
     ggtree::geom_tiplab(size = 2.4) +
     ggtree::geom_text2(ggplot2::aes(subset = !isTip & suppressWarnings(as.numeric(label)) >= support_threshold, label = label), hjust = -0.2, size = 2.6, colour = "#B91C1C") +
-    ggplot2::labs(title = "Internal-node support", subtitle = paste0("Only support ≥ ", support_threshold, "% is labelled")) +
+    ggplot2::labs(title = "Internal-node support", subtitle = paste0("Only support >= ", support_threshold, "% is labelled")) +
     ggtree::theme_tree2() + ggplot2::theme(plot.title = ggplot2::element_text(face = "bold"))
 }
 

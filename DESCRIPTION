@@ -1,5 +1,5 @@
 Package: phyloheatmapviz
-Title: Phylogenomic Visualization with ggtree and ComplexHeatmap
+Title: Phylogenomic Visualization with Ggtree and ComplexHeatmap
 Version: 1.0.0
 Authors@R: person("Muhammad", "Bilal", role = c("aut", "cre"), email = "mbilal@oakland.edu")
 Description: Validated and reproducible phylogenetic, genomic, and multi-omics
@@ -9,17 +9,15 @@ Encoding: UTF-8
 RoxygenNote: 7.3.3
 Depends: R (>= 4.6)
 Imports:
-    ape,
     circlize,
     ComplexHeatmap (>= 2.28.0),
     ggplot2 (>= 4.0.0),
     ggtree (>= 4.2.0),
-    grid,
-    scales
+    grid
 Suggests:
+    ape,
     covr,
     pkgdown,
     rcmdcheck,
     testthat (>= 3.2.0)
 Config/testthat/edition: 3
-

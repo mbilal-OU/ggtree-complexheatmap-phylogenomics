@@ -1,5 +1,6 @@
 ^\.github$
 ^CONTRIBUTING\.md$
+^CITATION\.cff$
 ^data$
 ^docs$
 ^figures$
@@ -7,4 +8,3 @@
 ^tutorials$
 ^_pkgdown\.yml$
 ^LICENSE\.md$
-
