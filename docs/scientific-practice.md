@@ -8,7 +8,7 @@ The package deliberately rejects partial and duplicated matches.
 
 ## Make transformations visible
 
-State whether cells contain presence–absence, counts, relative abundance, CLR
+State whether cells contain presence/absence, counts, relative abundance, CLR
 coordinates, log expression, row z-scores, correlations, or variant categories.
 The same palette can make those quantities look deceptively interchangeable.
 
@@ -18,4 +18,3 @@ ggtree visualizes topology produced upstream; ComplexHeatmap clusters values
 according to user-selected transformations and distances. Neither drawing step
 establishes evolutionary causality, differential abundance, clinical action,
 or statistically significant subtypes.
-

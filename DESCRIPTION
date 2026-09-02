@@ -1,9 +1,10 @@
 Package: phyloheatmapviz
-Title: Phylogenomic Visualization with Ggtree and ComplexHeatmap
+Title: Tree-Aligned Phylogenomics with ggtree and ComplexHeatmap
 Version: 1.0.0
 Authors@R: person("Muhammad", "Bilal", role = c("aut", "cre"), email = "mbilal@oakland.edu")
-Description: Validated and reproducible phylogenetic, genomic, and multi-omics
-    visualization functions built with ggtree and ComplexHeatmap.
+Description: Validated functions that align phylogenetic structure, sample
+    metadata, genomic matrices, and multi-omics annotations with ggtree and
+    ComplexHeatmap.
 License: MIT + file LICENSE
 Encoding: UTF-8
 RoxygenNote: 7.3.3

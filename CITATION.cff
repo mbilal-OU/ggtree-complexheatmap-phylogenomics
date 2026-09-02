@@ -1,12 +1,11 @@
 cff-version: 1.2.0
 message: "If you use this tutorial repository, please cite it as below."
-title: "Phylogenomic Visualization with ggtree and ComplexHeatmap"
+title: "Tree-Aligned Phylogenomics with ggtree and ComplexHeatmap"
 type: software
 authors:
   - family-names: Bilal
     given-names: Muhammad
-repository-code: "https://github.com/mbilal-OU/Biology-data-viz-ggtree-complexheatmap"
+repository-code: "https://github.com/mbilal-OU/ggtree-complexheatmap-phylogenomics"
 license: MIT
 version: 1.0.0
 date-released: 2026-08-30
-
