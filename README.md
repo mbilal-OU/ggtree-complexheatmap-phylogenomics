@@ -54,6 +54,9 @@ own-data workflow, interpretation, and scientific limits.
 
 ```r
 if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
+if (!requireNamespace("remotes", quietly = TRUE)) install.packages("remotes")
+if (!requireNamespace("ape", quietly = TRUE)) install.packages("ape")
+
 BiocManager::install(c("ggtree", "ComplexHeatmap"))
 remotes::install_github("mbilal-OU/ggtree-complexheatmap-phylogenomics")
 
